@@ -61,18 +61,18 @@ function mostrapokemon (poke) {
     const div = document.createElement("div")
     // div.className.add("pokemon")
     div.innerHTML = `<div class="pokemon">
-                    <p class="pokemon-id-back">#${pokeId}</p>
-                    <div class="pokemon-imagen">
+                    <p>#${pokeId}</p>
+                    <div ">
                         <img src="${poke.sprites.other.dream_world.front_default}" alt="Pikachu" width="250px">
                     </div>
-                    <div class="pokemon-info">
-                        <div class="nombre-contenedor">
-                            <h2 class="pokemon-nombre">${poke.name}</h2>
+                    <div>
+                        <div>
+                            <h2>${poke.name}</h2>
                         </div>
-                        <div class="pokemon-tipos">
+                        <div>
                         ${tipos}    
                         </div>
-                        <div class="pokemon-stats">
+                        <div>
                             <p class="stat">${poke.height}</p>
                             <p class="stat">${poke.weight}</p>
                         </div>
